@@ -10,7 +10,7 @@ pipeline{
 
      steps{
 
-      echo $(hostnamectl)
+      sh "hostnamectl"
 
     }
   }
