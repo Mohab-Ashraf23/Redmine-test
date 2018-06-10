@@ -1,6 +1,8 @@
 pipeline{
 
- agent "Redmine"
+ agent {
+ label "Redmine"
+ }
 
  stages{
 
