@@ -1,11 +1,16 @@
 pipeline{
- agent any
+
+ agent "Redmine"
+
  stages{
+
    stage("Build"){
+
      steps{
-  ec "building test"
+
+      hostnamectl
+
     }
   }
-
  }
 }
