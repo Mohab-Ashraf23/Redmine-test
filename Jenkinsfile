@@ -21,7 +21,7 @@ pipeline{
   emailext(
   subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Success!",
   body: """ type html here """,
-  to: "mohab@espace.com.eg"
+  to: "mohab.ashraf@espace.com.eg"
   )
   }
   }
@@ -33,7 +33,7 @@ failure{
 emailext(
 subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Failed!",
 body: """ type html here """,
-to: "mohab@espace.com.eg"
+to: "mohab.ashraf@espace.com.eg"
 )
 }
 }
