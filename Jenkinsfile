@@ -16,6 +16,25 @@ pipeline{
 
 
     }
+    post{
+  success{
+  emailext(
+  subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Success!",
+  body: """ type html here """,
+  to: "mohab@espace.com.eg"
+  )
   }
- }
+  }
+
+}
+  post{
+failure{
+emailext(
+subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Failed!",
+body: """ type html here """,
+to: "mohab@espace.com.eg"
+)
+}
+}
+
 }
