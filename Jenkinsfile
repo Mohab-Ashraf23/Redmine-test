@@ -10,7 +10,7 @@ pipeline{
 
      steps{
 
-      sh "cd redmine/jobs"
+      sh "cd /var/lib/jenkins/redmine/jobs"
       sh "mkdir ${env.BUILD_NUMBER}"
       sh "cd ${env.BUILD_NUMBER}"
       sh "git clone git@github.com:Mohab-eSpace/Redmine-test.git"
