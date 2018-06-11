@@ -27,6 +27,7 @@ pipeline{
   }
 
 }
+}
   post{
 failure{
 emailext(
@@ -37,5 +38,5 @@ to: "mohab@espace.com.eg"
 }
 }
 
-}
+
 }
